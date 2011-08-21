@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<title>Toggle a/c</title> 
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css" />
+	<link rel="apple-touch-icon" href="ac-icon.png"/>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js"></script>
 	<script type="text/javascript">
@@ -47,7 +48,7 @@
 	</script>
 </head> 
 <body>
-  <div data-role="page" id="page-id">
+  <div data-role="page" data-theme="a">
 	  <div data-role="content">	
       <button id="toggle-button">Toggle a/c</button>
 	  </div><!-- /content -->
