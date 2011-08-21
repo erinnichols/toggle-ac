@@ -11,8 +11,7 @@ jQuery(function($) {
     for(var i in history) {
       if(count >= 10) { break; }
       count++;
-      var dateString = history[i];
-      var date = new Date(dateString * 1000);
+      var date = new Date(history[i] * 1000);
       oldDateLabel = dateLabel;
       dateLabel = days[date.getDay()] + ', ' + months[date.getMonth()] + ' ' + date.getDate();
       if(oldDateLabel != dateLabel) {
