@@ -29,6 +29,8 @@ jQuery(function($) {
       if(result && result.success && result.success == true) {
         $('.datapoint').remove();
         parseHistory(result.history);
+      } else {
+        alert("Toggle failed. Please try again.");
       }
     });
   });
