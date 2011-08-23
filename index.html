@@ -7,19 +7,20 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 	<title>Toggle a/c</title> 
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css" />
-	<link rel="apple-touch-icon" href="ac-icon.png"/>
+	<link rel="stylesheet" href="css/toggle.css" />
+	<link rel="apple-touch-icon" href="img/power114x114.png" />
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js"></script>
-	<script type="text/javascript" src="toggle.js"></script>
+	<script type="text/javascript" src="js/toggle.js"></script>
 </head> 
 <body>
   <div data-role="page" data-theme="a">
 	  <div data-role="content">	
-      <button id="toggle-button">Toggle a/c</button>
+      <button id="toggle-button" data-icon="ac-power">power</button>
 	  </div><!-- /content -->
 	  <div data-role="content">
       <ul data-role="listview" id="history">
-        <li data-role="list-divider" role="heading">Toggle History</a>
+        <li data-role="list-divider" role="heading">History</a>
       </ul>
 	  </div>
 	  <div data-role="footer">
