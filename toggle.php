@@ -7,6 +7,9 @@ if(trim($output) == "0") {
   $historyData = fread($historyFile, filesize('history.json'));
   fclose($historyFile);
   $historyJson = json_decode($historyData);
+  if(sizeof($historyJson) > 10) {
+    array_pop($historyJson);
+  }
   array_unshift($historyJson, time());
   $historyFile = fopen('history.json', 'w') or die('{ success: false }');
   fwrite($historyFile, json_encode($historyJson));

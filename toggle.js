@@ -7,10 +7,7 @@ jQuery(function($) {
   function parseHistory(history) {
     var dateLabel = '';
     var oldDateLabel = 'dummy';
-    var count = 0;
     for(var i in history) {
-      if(count >= 10) { break; }
-      count++;
       var date = new Date(history[i] * 1000);
       oldDateLabel = dateLabel;
       dateLabel = days[date.getDay()] + ', ' + months[date.getMonth()] + ' ' + date.getDate();
